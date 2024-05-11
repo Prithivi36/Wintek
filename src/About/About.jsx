@@ -3,7 +3,7 @@ import Ahimaz from '../assets/Ahimaz.png'
 
 function About() {
   return (
-    <div id='about'>
+    <div id='about' className='mt-5 pt-5'>
       <p className='text-center'>
         <h1 className='m-4 p-3 mt-5 highlight'>About us</h1>
       </p>
