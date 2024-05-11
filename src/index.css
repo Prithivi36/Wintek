@@ -29,7 +29,11 @@
     top: 0;
     z-index: 5;
   }
+
   .highlight{
     border: solid rgba(152, 84, 203, 1) ;
     display: inline-block;
+  }
+  .point{
+    cursor: pointer;
   }
