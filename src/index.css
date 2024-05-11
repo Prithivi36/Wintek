@@ -6,6 +6,19 @@
     color: rgba(152, 84, 203, 1);
     font-size: 500%;
 }
+.rounded-comb{
+  border-radius: 0 0 2rem 2rem ;
+}
+@media(min-width:768px){
+  .rounded-comb{
+    border-radius: 0 2rem 2rem 0 ;
+  }
+}
+
+.text-indigo{
+     
+    color: rgba(152, 84, 203, 1);
+}
 .navbar-toggler{
     border: none;
 }

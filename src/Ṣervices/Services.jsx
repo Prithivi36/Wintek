@@ -19,7 +19,7 @@ function Services() {
                 <div className="container py-4 col-md">
                     <img className='img-fluid' src={d.image} alt="" />
                 </div>
-                <div className='d-flex flex-column justify-content-center align-items-center col-md'>
+                <div className='d-flex  flex-column justify-content-center align-items-center col-md'>
                     <h1 className='py-4'>{d.heading}</h1>
                     <div className="thing">
                     <p>
