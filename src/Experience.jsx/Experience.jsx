@@ -1,6 +1,7 @@
 import React from 'react'
 import Confetti from 'react-confetti';
 import MyBizz from '../assets/Company/MyBizz.png'
+import imageList from './imageList';
 
 function Experience() {
     const [cheer,setCheer]=React.useState(false)
@@ -25,15 +26,18 @@ function Experience() {
                 <div className="testimonials d-flex justify-content-center align-items-center">
                     <h1 className='m-4 p-3 text-center highlight'>Our Testimonials</h1>
                 </div>
-                <div className="bg-light  px-md-0 px-5  g-5 mt-5 rounded-5 p-3 row container">
-                    <img className='col-12 col-sm-5 col-md-4 col-lg-3 col-xl-2' src={MyBizz} alt="" />
-                    <img className='col-12 col-sm-5 col-md-4 col-lg-3 col-xl-2' src={MyBizz} alt="" />
-                    <img className='col-12 col-sm-5 col-md-4 col-lg-3 col-xl-2' src={MyBizz} alt="" />
-                    <img className='col-12 col-sm-5 col-md-4 col-lg-3 col-xl-2' src={MyBizz} alt="" />
-                    <img className='col-12 col-sm-5 col-md-4 col-lg-3 col-xl-2' src={MyBizz} alt="" />
-                    <img className='col-12 col-sm-5 col-md-4 col-lg-3 col-xl-2' src={MyBizz} alt="" />
-                    <img className='col-12 col-sm-5 col-md-4 col-lg-3 col-xl-2' src={MyBizz} alt="" />
-                    <img className='col-12 col-sm-5 col-md-4 col-lg-3 col-xl-2' src={MyBizz} alt="" />
+                <div className="bg-white  px-md-0 px-5  g-5 mt-5 rounded-5 p-3 align-items-center row container">
+
+                    {
+                        imageList.map((i)=>{
+                            return(
+                                <div className="container mt-3  col-12  col-sm-5 col-md-4 col-lg-3 col-xl-2">
+                                    <img className=' img-fluid ' src={i} alt="" />
+                                </div>
+                            )
+                        })
+                    }
+                    
                     
                     
                 </div>
