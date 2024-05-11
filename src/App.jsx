@@ -1,4 +1,5 @@
 import About from "./About/About"
+import Address from "./Address/Address"
 import Experience from "./Experience.jsx/Experience"
 import Homepage from "./Home/Homepage"
 import Navbar from "./Navbar/Navbar"
@@ -13,6 +14,7 @@ function App() {
       <Services />
       <About />
       <Experience />
+      <Address />
     </>
   )
 }
