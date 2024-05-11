@@ -1,0 +1,35 @@
+.bg-indigo{
+    background-color: rgba(152, 84, 203, 1);
+}
+.h-text-indigo{
+     
+    color: rgba(152, 84, 203, 1);
+    font-size: 500%;
+}
+.navbar-toggler{
+    border: none;
+}
+.navbar-toggler:active {
+    /* Add your active styles here */
+    /* For example, change the background color */
+    background-color: rgb(202, 203, 207);
+  }
+  
+  .navbar-toggler:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .host{
+    position: relative;
+  }
+  .parasite{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 5;
+  }
+  .highlight{
+    border: solid rgba(152, 84, 203, 1) ;
+    display: inline-block;
+  }
