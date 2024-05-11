@@ -11,7 +11,7 @@ function Experience() {
         <div className="mt-5">
             <div className="">
             <h1 className='h-text-indigo text-center'>25 Years
-            <span className='text-light'> of Experience</span></h1>
+            <span style={{fontSize:'80%'}} className='text-light'> of Experience</span></h1>
             <p className='text-center'>in software application development service</p>
             <p className='text-center'>
                 <button onClick={()=>{

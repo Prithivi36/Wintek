@@ -38,7 +38,10 @@ function Address() {
         </div>
       </div>
       <div  className="maps p-5">
-        <div style={{border:'solid gray'}} className="rounded-5 row bg-light m-5">
+      <p className='text-center'>
+        <h1 className=' p-3 mt-5 rounded-5 highlight'>Direct Contact</h1>
+      </p>
+        <div style={{border:'solid gray'}} className="rounded-5 row bg-light mt-0 m-5">
           <div className="container col d-flex p-4">
             <img style={{borderRadius: '2rem  2rem '}} className='img-fluid ' src={Dummy} alt="" />
           </div>
