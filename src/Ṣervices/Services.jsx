@@ -9,7 +9,7 @@ function Services() {
         <div className="px-md-5">
 
         <div  id="myCar" className="carousel bg-dark text-light slide" data-bs-ride="carousel">
-        <div className="carousel-inner">
+        <div className="carousel-inner ">
             
 
             {data.map((d,i)=>{
@@ -29,7 +29,7 @@ function Services() {
                 </div>
                 <div className="d-md-flex align-items-center justify-content-center col col-md-1">
                     <p className='text-center'>
-                    <i class="bi bi-arrow-right"></i>
+                    <i className="bi bi-arrow-right"></i>
                     </p>
                 </div>
                 </div>
