@@ -37,20 +37,20 @@ function Address() {
           </div>
         </div>
       </div>
-      <div  className="maps p-5">
+      <div  className="maps  p-5">
       <p className='text-center'>
-        <h1 className=' p-3 mt-5 rounded-5 highlight'>Direct Contact</h1>
+        <h1 className=' p-3 mt-5  rounded-5 highlight'>Direct Contact</h1>
       </p>
-        <div style={{border:'solid gray'}} className="rounded-5 row bg-light mt-0 m-5">
+        <div style={{border:'solid gray'}} className="rounded-5 row bg-dark justify-content-center aligin-item-center mt-0 m-lg-5">
           <div className="container col d-flex p-4">
-            <img style={{borderRadius: '2rem  2rem '}} className='img-fluid ' src={Dummy} alt="" />
+            <img style={{borderRadius: '2rem  2rem ',border:'solid gray'}} className='img-fluid ' src={Dummy} alt="" />
           </div>
-          <div className="card row g-2 px-4 col py-4 m-5">
+          <div className=" row g-2 px-4 col-lg py-4  m-lg-5">
             <input type="text" className='form-control' placeholder='Your Name' />
             <input type="text" className='form-control' placeholder='Your Email' />
             <input type="text" className='form-control' placeholder='Your Subject' />
-            <textarea className='form-control' name="" placeholder='description' id=""></textarea>
-          <button className='btn bg-indigo text-light rounded-5'>Send Message</button>
+            <textarea className='form-control' name="" placeholder='Description' id=""></textarea>
+          <button className='btn bg-indigo text-light mt-5 rounded-5'>Send Message</button>
           </div>
         </div>
       </div>
