@@ -4,8 +4,8 @@ import Software from '../assets/Softwaredev.jpg'
 function Homepage() {
   return (
     <>
-    <div id='home' className="row mb-2 align-items-center justify-content-between">
-        <div className="image   p-5 col-md">
+    <div id='home' className="row me-0 mb-2 align-items-center justify-content-between">
+        <div className="py-5 col-md">
             <div className="container">
                 <img className=' img-fluid' src={Software} alt="" />
             </div>
