@@ -19,9 +19,9 @@ function About() {
             </div>
           </div>
       </div>
-      <div className="mx-md-5 ">
-        <div className="card rounded-5 p-5">
-          <h1 className='mb-5'>Wintek</h1>
+      <div className="mx-md-5 px-3 px-md-5">
+        <div className="card rounded-5 p-4 p-md-5">
+          <h1 className='mb-5 mt-5 mt-md-0'>Wintek</h1>
           <p>&nbsp;&nbsp;&nbsp;&nbsp;Wintek is complete software development service headquartered at Bangalore. We are expertise in providing a comprehensive and tailor-made solutions to meet customers delight. The company is registered as an MSME and also registered.</p>
 
           <p>&nbsp;&nbsp;&nbsp;&nbsp;Wintek more than two decade Professionally qualified the field of Information Technology in software development. Wintek provided innovative ideas towards growth of company in IT infrastructure development and its elevation at par with industry. Developing new clients by comparative study of market variable such as cost & time mechanism etc. and ensuring service as per their expectation.</p>
