@@ -26,7 +26,7 @@ function Navbar() {
                     <a className='nav-link me-5 fw-bold' href="#exp">Testimonials</a>
                 </li>
                 <li className='nav-item'>
-                    <a className='nav-link me-5 fw-bold' href="#">Contact</a>
+                    <a className='nav-link me-5 fw-bold' href="#contact">Contact</a>
                 </li>
                 
             </ul>

@@ -5,7 +5,7 @@ function Address() {
   return (
     <>
 
-    <div className='mt-5' >
+    <div id='contact' className='mt-5' >
       <p className='text-center'>
         <h1 className='m-4 p-3 mt-5 highlight'>Contact</h1>
       </p>
