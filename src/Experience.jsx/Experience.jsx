@@ -6,9 +6,9 @@ import imageList from './imageList';
 function Experience() {
     const [cheer,setCheer]=React.useState(false)
   return (
-    <div style={{position:'relative'}} className="d-flex bg-dark text-light mt-4 p-5 justify-content-center align-items-center">
+    <div id='exp' style={{position:'relative'}} className="d-flex bg-dark text-light mt-4 p-5 justify-content-center align-items-center">
         {cheer&&<Confetti numberOfPieces={500} />}
-        <div className="">
+        <div className="mt-5">
             <div className="">
             <h1 className='h-text-indigo text-center'>25 Years
             <span className='text-light'> of Experience</span></h1>

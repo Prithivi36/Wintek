@@ -4,7 +4,7 @@ import Software from '../assets/Softwaredev.jpg'
 function Homepage() {
   return (
     <>
-    <div  className="row mb-2 align-items-center justify-content-between">
+    <div id='home' className="row mb-2 align-items-center justify-content-between">
         <div className="image   p-5 col-md">
             <div className="container">
                 <img className=' img-fluid' src={Software} alt="" />
@@ -18,7 +18,7 @@ function Homepage() {
                 Wintek is complete software development service headquartered at Bangalore.
                  We are expertise in providing a comprehensive and tailor-made solutions to meet customers delight.
                 </p>
-                <button className='btn btn-dark rounded-5'>Learn More</button>
+                <a href='#services' className='btn btn-dark rounded-5'>Learn More</a>
             </div>
             <div className="mt-5 mb-5 mb-md-0">
                 <a className='me-4' href="https://www.google.com/maps/@12.955226,77.542659,18z?hl=en&entry=ttu">

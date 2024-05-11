@@ -5,7 +5,9 @@ function Services() {
   return (
     <>
     <div  id='services' className="bg-dark py-5 mt-4 text-light">
-        <h1 className='m-4 p-3  highlight'>Our Services</h1>
+        <p className='text-center'>
+            <h1 className='m-4 p-3  highlight'>Our Services</h1>
+        </p>
         <div className="px-md-5">
 
         <div  id="myCar" className="carousel bg-dark text-light slide" data-bs-ride="carousel">
