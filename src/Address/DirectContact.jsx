@@ -21,8 +21,20 @@ function DirectContact() {
             )
         })
     }
-    function sendMessage(entity){
-        axios.post("http://localhost:8083/submitForm")
+    function sendMessage(){
+        axios.post("http://localhost:8083/submitForm",from).then(
+            res=>{alert(res.data)
+                setForm(
+                    {
+                        name:'',
+                        email:'',
+                        phone:'',
+                        location:'',
+                        message:''
+                    }
+                )
+            }
+        )
     }
 
   return (
@@ -35,14 +47,14 @@ function DirectContact() {
                         <label htmlFor="FirstName" className='fw-bolder text-dark mb-1'>Name</label>
                         <div className="input-group">
                             <button className='btn btn-dark disabled'>@</button>
-                            <input name="name" onChange={()=>handleChange()} id='FirstName' className='form-control' placeholder='Your Name here' type="text" />
+                            <input value={from.name}  name="name" onChange={()=>handleChange()} id='FirstName' className='form-control' placeholder='Your Name here' type="text" />
                         </div>
                     </div>
                     <div className="col-md">
                         <label htmlFor="Email" className='fw-bolder text-dark mb-1'>Email</label>
                         <div className="input-group">
                             <button className='btn btn-dark disabled'>M</button>
-                            <input name="email" onChange={()=>handleChange()} id='Email' className='form-control' placeholder='Your mail here' type="text" />
+                            <input  value={from.email}  name="email" onChange={()=>handleChange()} id='Email' className='form-control' placeholder='Your mail here' type="text" />
                         </div>
                     </div>
                 </div>
@@ -53,7 +65,7 @@ function DirectContact() {
                             <button className='btn btn-dark disabled'>
                             <i className="bi bi-telephone-fill"></i> 
                             </button>
-                            <input name="phone" onChange={()=>handleChange()} id='Phone' className='form-control' placeholder='Your Phone here' type="text" />
+                            <input value={from.phone} name="phone" onChange={()=>handleChange()} id='Phone' className='form-control' placeholder='Your Phone here' type="text" />
                         </div>
                     </div>
                     <div className="col-md">
@@ -62,7 +74,7 @@ function DirectContact() {
                             <button className='btn btn-dark disabled'>
                                 <i className="bi bi-geo-fill"></i>
                             </button>
-                            <input name="location" onChange={()=>handleChange()} id='Location' className='form-control' placeholder='Your Location mail here' type="text" />
+                            <input value={from.location}  name="location" onChange={()=>handleChange()} id='Location' className='form-control' placeholder='Your Location mail here' type="text" />
                         </div>
                     </div>
                 </div>
@@ -73,13 +85,13 @@ function DirectContact() {
                         </label>
                         <div className="input-group">
                             
-                            <textarea name="message" onChange={()=>handleChange()} style={{height:'200px'}} id='Message' className='form-control' placeholder='Drop Your Message' type="text" />
+                            <textarea value={from.message}  name="message" onChange={()=>handleChange()} style={{height:'200px'}} id='Message' className='form-control' placeholder='Drop Your Message' type="text" />
                         </div>
                     </div>
                 </div>
             </div>
             <p className='text-center mt-5'>
-                <button className="btn bg-indigo rounded-5 text-light">Send Message</button>
+                <button onClick={sendMessage} className="btn bg-indigo rounded-5 text-light">Send Message</button>
             </p>
         </div>
     </div>
