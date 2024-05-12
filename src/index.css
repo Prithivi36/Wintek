@@ -1,6 +1,9 @@
 .bg-indigo{
     background-color: rgba(152, 84, 203, 1);
 }
+.bg-indigo:focus{
+    background-color: rgb(152, 84, 203, 1);
+}
 .h-text-indigo{
      
     color: rgba(152, 84, 203, 1);
@@ -13,8 +16,33 @@
   .rounded-comb{
     border-radius: 0 2rem 2rem 0 ;
   }
+  
 }
+@media(max-width:768px){
+  .mob{
+    width: 500px;
+    height: 320px;
+  }
+  .h-text-indigo{
+     
+    color: rgba(152, 84, 203, 1);
+    font-size: 400%;
+}
+}
+@media(max-width:1000px){
 
+  .h-text-indigo{
+     
+    color: rgba(152, 84, 203, 1);
+    font-size: 395%;
+}
+}
+.mob{
+  font-family: 'Courier New', Courier, monospace;
+}
+.fit{
+  object-fit:cover;
+}
 .text-indigo{
      
     color: rgba(152, 84, 203, 1);

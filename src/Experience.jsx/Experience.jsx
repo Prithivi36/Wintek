@@ -29,9 +29,9 @@ function Experience() {
                 <div className="bg-white  px-md-0 px-5  g-5 mt-5 rounded-5 p-3 align-items-center row container">
 
                     {
-                        imageList.map((i)=>{
+                        imageList.map((i,d)=>{
                             return(
-                                <div className="container mt-3  col-12  col-sm-5 col-md-4 col-lg-3 col-xl-2">
+                                <div key={d} className="container mt-3  col-12  col-sm-5 col-md-4 col-lg-3 col-xl-2">
                                     <img className=' img-fluid ' src={i} alt="" />
                                 </div>
                             )

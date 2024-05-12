@@ -7,7 +7,7 @@ const data=[
 
     {"heading":"Software Development",
     "image":applicationimage,
-        "description":"Application software (applications or apps) to help users perform tasks. Office productivity suites, data-bs management software, media players and security. "
+        "description":"Application software (applications or apps) to help users perform tasks. Office productivity suites, data-bs management software, media players and security.This could involve creating desktop, web, or mobile applications from scratch "
     }
     ,{"heading":"Software Maintenance",
     "image":maintenance,

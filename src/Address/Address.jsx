@@ -1,63 +1,45 @@
 import React from 'react'
-import Dummy from './Temp.png'
+import DirectContact from './DirectContact'
+import CopyRight from './CopyRight'
+import ContactCard from './ContactCard'
+import contact from '../assets/contact.svg'
 
 function Address() {
   return (
     <>
 
-    <div id='contact' className='mt-5' >
-      <p className='text-center'>
-        <h1 className='m-4 p-3 mt-5 highlight'>Contact</h1>
-      </p>
-      <div className="container p-5 ">
-        <div className="row">  
-          <div className="card col-sm me-lg-1 p-3">
-            <h3 className='fw-bold'>Address</h3>
-            <p>
-            No.33, 1’st Cross,Sampangi Ram Nagar,Near Corporation Circle,Bengaluru-560027,KARNATAKA, SOUTH INDIA.
-            </p>
-          </div>
-          <div className="card col-sm p-3 mx-sm-1 mt-sm-0 mt-4 ">
-            <h3 className='fw-bold'>Contact Number</h3>
-            <p>
-              +91 86953 53002
-            </p>
-          </div>
-          <div className="card col-lg p-3 mx-lg-1 mt-lg-0 mt-4">
-            <h3 className='fw-bold'>Email Address</h3>
-            <p>
-              info@wintekindia.com
-            </p>
-          </div>
-          <div className="card col-lg ms-lg-1 p-3 mt-lg-0 mt-4">
-            <h3 className='fw-bold'>Website</h3>
-            <p>
-              www.winteindia.com
-            </p>
-          </div>
+    <div  id='contact' className='mt-5 ' >
+      <div className=" py-5 align-items-center justify-content-center  row me-0">
+        <div className="py-md-5  d-none d-sm-block col-md-6">
+        <div className="container ">
+                <img className=' img-fluid' src={contact} alt="" />
+            </div>
         </div>
-      </div>
-      <div  className="maps  p-5">
-      <p className='text-center'>
-        <h1 className=' p-3 mt-5  rounded-5 highlight'>Direct Contact</h1>
-      </p>
-        <div style={{border:'solid gray'}} className="rounded-5 row bg-dark justify-content-center aligin-item-center mt-0 m-lg-5">
-          <div className="container col d-flex p-4">
-            <img style={{borderRadius: '2rem  2rem ',border:'solid gray'}} className='img-fluid ' src={Dummy} alt="" />
+        
+        <div className="col-md-5 p-5">
+          <h1 className="fw-bolder h-text-indigo">CONTACT <span className='fw-light text-dark'>US</span></h1>
+          <div className="d-inline-block mt-5">
+            <h3 ><i className="bi  bi-geo-alt-fill"></i></h3>
+            <p className='mt-2' >No.33, 1’st Cross,Sampangi Ram Nagar,Near Corporation Circle,Bengaluru-560027,Karnataka, South India.</p>
           </div>
-          <div className=" row g-2 px-4 col-lg py-4  m-lg-5">
-            <input type="text" className='form-control' placeholder='Your Name' />
-            <input type="text" className='form-control' placeholder='Your Email' />
-            <input type="text" className='form-control' placeholder='Your Subject' />
-            <textarea className='form-control' name="" placeholder='Description' id=""></textarea>
-          <button className='btn bg-indigo text-light mt-5 rounded-5'>Send Message</button>
+          <div className="d-block mt-4">
+            <h3 ><i className="bi  bi-telephone-fill"></i></h3>
+            <p className='mt-2' >+91 86953 53002</p>
+          </div>
+          <div className="d-block mt-4">
+            <h3 ><i className="bi  bi-envelope-fill"></i></h3>
+            <p className='mt-2' >info@wintekindia.com</p>
+          </div>
+          <div className="d-block mt-4">
+            <h3 ><i className="bi  bi-globe"></i></h3>
+            <p className='mt-2' >info@wintekindia.com</p>
           </div>
         </div>
       </div>
     </div>
-    <div style={{height:'180px'}} className="bg-dark d-flex align-items-center justify-content-center">
-      <p className='text-secondary text-center'>Copyright ©2024 All rights reserved</p>
-    </div>
+    <DirectContact />
+    <CopyRight />
+    
     </>
   )
 }

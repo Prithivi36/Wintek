@@ -5,9 +5,9 @@ function Services() {
   return (
     <>
     <div  id='services' className="bg-dark py-5 mt-4 text-light">
-        <p className='text-center'>
+        <div className='text-center'>
             <h1 className='m-4 p-3  highlight'>Our Services</h1>
-        </p>
+        </div>
         <div className="px-md-5">
 
         <div  id="myCar" className="carousel bg-dark text-light slide" data-bs-ride="carousel">
@@ -18,10 +18,10 @@ function Services() {
                 return(
                     <div key={i} className={`carousel-item ${i===0?"active":'no'}`}>
                     <div className="bg-indigo host rounded-5 row px-lg-5 mb-5 mx-3 mx-md-5">
-                <div className="container py-4 col-md">
-                    <img className='img-fluid' src={d.image} alt="" />
+                <div className="container mob py-4 col-md">
+                    <img className='img-fluid fit' src={d.image} alt="" />
                 </div>
-                <div className='d-flex  flex-column justify-content-center align-items-center col-md'>
+                <div className='d-flex mob flex-column justify-content-center align-items-center col-md'>
                     <h1 className='py-4'>{d.heading}</h1>
                     <div className="thing">
                     <p>
