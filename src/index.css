@@ -4,8 +4,11 @@
 .bg-indigo:focus{
     background-color: rgb(152, 84, 203, 1);
 }
+.d-contact{
+  font-family:"Bellota", system-ui;
+}
 .h-text-indigo{
-     
+
     color: rgba(152, 84, 203, 1);
     font-size: 500%;
 }
@@ -51,8 +54,6 @@
     border: none;
 }
 .navbar-toggler:active {
-    /* Add your active styles here */
-    /* For example, change the background color */
     background-color: rgb(202, 203, 207);
   }
   
