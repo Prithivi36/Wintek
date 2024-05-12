@@ -21,7 +21,9 @@ function DirectContact() {
             )
         })
     }
-    console.log(from)
+    function sendMessage(entity){
+        axios.post("http://localhost:8083/submitForm")
+    }
 
   return (
     <div  className="d-contact text-light bg-dark py-5 px-3 p-md-5">
