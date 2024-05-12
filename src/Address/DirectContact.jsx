@@ -6,7 +6,7 @@ import axios from 'axios'
 function DirectContact() {
 
     const [from,setForm]=React.useState({
-        fname:'',
+        name:'',
         email:'',
         phone:'',
         location:'',
@@ -30,10 +30,10 @@ function DirectContact() {
             <div className="bg-light rounded-4  py-4 px-3">
                 <div className="row">
                     <div className="col-md mb-md-0 mb-3">
-                        <label htmlFor="FirstName" className='fw-bolder text-dark mb-1'>First Name</label>
+                        <label htmlFor="FirstName" className='fw-bolder text-dark mb-1'>Name</label>
                         <div className="input-group">
                             <button className='btn btn-dark disabled'>@</button>
-                            <input name="fname" onChange={()=>handleChange()} id='FirstName' className='form-control' placeholder='Your Name here' type="text" />
+                            <input name="name" onChange={()=>handleChange()} id='FirstName' className='form-control' placeholder='Your Name here' type="text" />
                         </div>
                     </div>
                     <div className="col-md">
