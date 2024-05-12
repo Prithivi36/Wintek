@@ -14,4 +14,6 @@ public class FromSubmission {
     private String name;
     private String email;
     private String message;
+    private String location;
+    private String phone;
 }

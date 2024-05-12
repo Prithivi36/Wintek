@@ -1,8 +1,28 @@
 import React from 'react'
 import Dummy from './Temp.png'
+import axios from 'axios'
 
 
 function DirectContact() {
+
+    const [from,setForm]=React.useState({
+        fname:'',
+        email:'',
+        phone:'',
+        location:'',
+        message:''
+    })
+
+    function handleChange(){
+        const {name,value} = event.target
+        setForm((prev)=>{
+            return(
+                {...prev,[name]:value}
+            )
+        })
+    }
+    console.log(from)
+
   return (
     <div  className="d-contact text-light bg-dark py-5 px-3 p-md-5">
         <div className="container">
@@ -13,14 +33,14 @@ function DirectContact() {
                         <label htmlFor="FirstName" className='fw-bolder text-dark mb-1'>First Name</label>
                         <div className="input-group">
                             <button className='btn btn-dark disabled'>@</button>
-                            <input id='FirstName' className='form-control' placeholder='Your Name here' type="text" />
+                            <input name="fname" onChange={()=>handleChange()} id='FirstName' className='form-control' placeholder='Your Name here' type="text" />
                         </div>
                     </div>
                     <div className="col-md">
                         <label htmlFor="Email" className='fw-bolder text-dark mb-1'>Email</label>
                         <div className="input-group">
                             <button className='btn btn-dark disabled'>M</button>
-                            <input id='Email' className='form-control' placeholder='Your mail here' type="text" />
+                            <input name="email" onChange={()=>handleChange()} id='Email' className='form-control' placeholder='Your mail here' type="text" />
                         </div>
                     </div>
                 </div>
@@ -31,7 +51,7 @@ function DirectContact() {
                             <button className='btn btn-dark disabled'>
                             <i className="bi bi-telephone-fill"></i> 
                             </button>
-                            <input id='Phone' className='form-control' placeholder='Your Phone here' type="text" />
+                            <input name="phone" onChange={()=>handleChange()} id='Phone' className='form-control' placeholder='Your Phone here' type="text" />
                         </div>
                     </div>
                     <div className="col-md">
@@ -40,7 +60,7 @@ function DirectContact() {
                             <button className='btn btn-dark disabled'>
                                 <i className="bi bi-geo-fill"></i>
                             </button>
-                            <input id='Location' className='form-control' placeholder='Your Location mail here' type="text" />
+                            <input name="location" onChange={()=>handleChange()} id='Location' className='form-control' placeholder='Your Location mail here' type="text" />
                         </div>
                     </div>
                 </div>
@@ -51,7 +71,7 @@ function DirectContact() {
                         </label>
                         <div className="input-group">
                             
-                            <textarea style={{height:'200px'}} id='Message' className='form-control' placeholder='Drop Your Message' type="text" />
+                            <textarea name="message" onChange={()=>handleChange()} style={{height:'200px'}} id='Message' className='form-control' placeholder='Drop Your Message' type="text" />
                         </div>
                     </div>
                 </div>

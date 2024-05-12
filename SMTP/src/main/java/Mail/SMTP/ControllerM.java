@@ -17,7 +17,9 @@ public class ControllerM {
     @PostMapping("/submitForm")
     public ResponseEntity<String> submitForm(@RequestBody FromSubmission submission) {
         try {
-            emailService.sendEmail(submission.getEmail(), "New Customer request from "+ submission.getName() +"Through Website" ,submission.getMessage());
+            String bOfM= submission.getMessage()+" \n \nContact : \n Name : \t "+submission.getName()+"\n Phone : \t"+submission.getPhone()+"\n Location : \t"
+                    +submission.getLocation() +"Mail : \t"+submission.getEmail();
+            emailService.sendEmail(submission.getEmail(), "New Customer request from "+ submission.getName() +"Through Website" ,bOfM);
             return ResponseEntity.ok("Form submitted successfully!");
         } catch (MessagingException e) {
             e.printStackTrace();
