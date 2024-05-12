@@ -32,7 +32,7 @@ function Address() {
           </div>
           <div className="d-block mt-4">
             <h3 ><i className="bi  bi-globe"></i></h3>
-            <p className='mt-2' >info@wintekindia.com</p>
+            <p className='mt-2' >www.wintekindia.com</p>
           </div>
         </div>
       </div>
