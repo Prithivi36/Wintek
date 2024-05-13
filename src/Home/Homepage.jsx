@@ -12,7 +12,7 @@ function Homepage() {
         </div>
         <div className="Textual px-md-0 px-4 col-md">
             <div className="">
-                <h1 className='h-text-indigo'>WINTEK</h1>
+                <h1 className='head-text-indigo btn-shine linear-wipe'>WINTEK</h1>
                 <h4>A complete software development</h4>
                 <p className='me-lg-3'>
                 Wintek is complete software development service headquartered at Bangalore.

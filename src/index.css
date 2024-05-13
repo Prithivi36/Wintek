@@ -12,6 +12,55 @@
     color: rgba(152, 84, 203, 1);
     font-size: 500%;
 }
+.head-text-indigo{
+    position: relative;
+    text-transform: uppercase;
+    color: rgb(152, 84, 203, 1);
+    font-size: 500%;
+}
+
+.linear-wipe {
+  
+  background: linear-gradient(to bottom right, rgba(111, 53, 158, 0.9) 10%, rgba(152, 84, 203, 1) 40%,rgba(152, 84, 203, 1) 50%,rgba(152, 84, 203, 1) 60%, rgb(219, 98, 28) 70%, rgb(255, 255, 255) 100%);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  animation: shine 2s linear forwards;
+  
+  
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% 200%;
+  }
+/* }
+.btn-shine{
+  
+  background: linear-gradient(to right, rgb(152, 84, 203, 1) 0, white 10%, rgb(152, 84, 203, 1) 20%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s forwards linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  white-space: nowrap;
+}    
+@keyframes shine{
+  0%{
+    background-position: 0}
+  60%{
+    background-position: 180px}
+  100%{
+    background-position: 180px}
+
+} */
+
+
+
+
+
 .rounded-comb{
   border-radius: 0 0 2rem 2rem ;
 }
