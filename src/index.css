@@ -5,7 +5,7 @@
     background-color: rgb(152, 84, 203, 1);
 }
 .d-contact{
-  font-family:"Bellota", system-ui;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .h-text-indigo{
 
@@ -41,7 +41,7 @@
 }
 }
 .mob{
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .fit{
   object-fit:cover;

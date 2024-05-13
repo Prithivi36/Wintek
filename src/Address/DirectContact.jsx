@@ -1,6 +1,7 @@
 import React from 'react'
 import Dummy from './Temp.png'
 import axios from 'axios'
+import Loading from '../assets/Loading.gif'
 
 
 function DirectContact() {
@@ -13,6 +14,8 @@ function DirectContact() {
         message:''
     })
 
+    const [loading,setLoading]=React.useState((false))
+
     function handleChange(){
         const {name,value} = event.target
         setForm((prev)=>{
@@ -22,7 +25,8 @@ function DirectContact() {
         })
     }
     function sendMessage(){
-        axios.post("http://127.0.0.1:8083/submitForm",from).then(
+        setLoading(true)
+        axios.post("http://65.0.107.35:8083/submitForm",from).then(
             res=>{alert(res.data)
                 setForm(
                     {
@@ -33,6 +37,7 @@ function DirectContact() {
                         message:''
                     }
                 )
+                setLoading(false)
             }
         )
     }
@@ -84,14 +89,19 @@ function DirectContact() {
                             <h5>Your Message Here !</h5>
                         </label>
                         <div className="input-group">
-                            
                             <textarea value={from.message}  name="message" onChange={()=>handleChange()} style={{height:'200px'}} id='Message' className='form-control' placeholder='Drop Your Message' type="text" />
                         </div>
                     </div>
                 </div>
             </div>
             <p className='text-center mt-5'>
-                <button onClick={sendMessage} className="btn bg-indigo rounded-5 text-light">Send Message</button>
+                <button onClick={sendMessage} className="btn bg-indigo rounded-5 text-light">
+                    {loading?
+                    <>
+                    <img className='img-fluid w-50 m-0' src={Loading} alt="" />
+                    </>
+                    :'Send Message'}
+                </button>
             </p>
         </div>
     </div>
