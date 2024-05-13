@@ -18,7 +18,7 @@ public class ServiceM {
         MimeMessage message = javaMailSender.createMimeMessage();
         MimeMessageHelper helper = new MimeMessageHelper(message, true);
 
-        helper.setTo("prithivip01@gmail.com");
+        helper.setTo("haidavid17@gmail.com");
         helper.setSubject(subject);
         helper.setText(body);
         javaMailSender.send(message);
