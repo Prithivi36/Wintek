@@ -22,7 +22,7 @@ function DirectContact() {
         })
     }
     function sendMessage(){
-        axios.post("http://65.0.107.35:8083/submitForm",from).then(
+        axios.post("http://127.0.0.1:8083/submitForm",from).then(
             res=>{alert(res.data)
                 setForm(
                     {
