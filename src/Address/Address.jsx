@@ -8,7 +8,7 @@ function Address() {
   return (
     <>
 
-    <div  id='contact' className='mt-5 ' >
+    <div  id='contact' className='mt-5 bg-light text-dark' >
       <div className=" py-5 align-items-center justify-content-center  row me-0">
         <div className="py-md-5  d-none d-sm-block col-md-6">
         <div className="container ">
@@ -17,7 +17,7 @@ function Address() {
         </div>
         
         <div className="col-md-5 p-5">
-          <h1 className="fw-bolder h-text-indigo">CONTACT <span className='fw-light text-dark'>US</span></h1>
+          <h1 className="fw-bolder h-text-indigo">CONTACT <span className='fw-lighter text-dark'>US</span></h1>
           <div className="d-inline-block mt-5">
             <h3 ><i className="bi  bi-geo-alt-fill"></i></h3>
             <p className='mt-2' >No.33, 1’st Cross,Sampangi Ram Nagar,Near Corporation Circle,Bengaluru-560027,Karnataka, South India.</p>

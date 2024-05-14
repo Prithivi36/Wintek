@@ -63,7 +63,7 @@ function DirectContact() {
     }
 
   return (
-    <div  className="d-contact text-light bg-dark py-5 px-3 p-md-5">
+    <div  className="d-contact  py-5 px-3 p-md-5">
         <div className="container">
             <h1 className='mb-5'>Get in Touch Today !</h1>
             <div className="bg-light rounded-4  py-4 px-3">
