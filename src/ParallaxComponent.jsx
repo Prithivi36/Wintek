@@ -11,7 +11,10 @@ function ParallaxComponent() {
         </ParallaxLayer>
         <ParallaxLayer offset={0} speed={-1}>
           <div className="animation_layer parallax justify-content-center align-items-center d-flex" id=''>
-            <h1  className='fw-bolder parallax-text linear-wipe '>WINTEK</h1>
+            <div className="">
+              <h1  className='fw-bolder text-center parallax-text linear-wipe '>WINTEK</h1>
+              <h5 className='text-center fw-bolder'>Attain Customer's Delight</h5>
+            </div>
           </div>
         </ParallaxLayer>
         <ParallaxLayer offset={0} speed={1.8}>

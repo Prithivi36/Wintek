@@ -13,7 +13,7 @@ function About() {
               <img src={Ahimaz} className='img-fluid p-md-3 p-5 rounded-circle' alt="" />
             </div>
             <div className="col  rounded-comb bg-light">
-              <h2 className='mt-3 ms-3'>AhimaaZ </h2>
+              <h2 className='mt-3 text-dark ms-3'>AhimaaZ </h2>
               <h4 className='mt-3 ms-3 text-indigo'>CMD</h4>
               <p className='mt-4 ms-3 text-dark'>
               AhimaaZ - CMD He is prominent personality in the industry for more than two decade Professionally qualified into the field of Information Technology. He provided innovative ideas towards growth of company in IT infrastructure development and its elevation at par with industry. Developing new clients by comparative study of market variable such as cost & time mechanism etc. and ensuring service as per their expectation.

@@ -11,12 +11,12 @@ function App() {
   
   return (
     <>
-    <div className="d-md-block d-none">
+    <div className="d-lg-block d-none">
       <ParallaxComponent/>
     </div>
       <Dummy/>
       <Navbar />
-    <div className="d-md-none d-block">
+    <div className="d-lg-none mt-md-5 mt-lg-0 d-block">
       <Homepage />
     </div>
       <Services />
