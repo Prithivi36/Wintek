@@ -30,9 +30,9 @@ function About() {
           <div className="col-md d-flex align-items-center justify-content-center">
             <div className="">
               <div className="ms-5 d-flex mt-5 mb-2 mt-md-0 align-items-center justify-contents-center">
-                <div className="bg-warning  " style={{width:'136px',height:'4px'}}></div>
+                <div className="bg-warning  " style={{width:'80px',height:'4px'}}></div>
                 <h1 className='text-indigo'>Wintek</h1>
-                <div className="bg-warning" style={{width:'136px',height:'4px'}}></div>
+                <div className="bg-warning" style={{width:'80px',height:'4px'}}></div>
               </div>
               <div className="p-5">
               <p>&nbsp;&nbsp;&nbsp;&nbsp;Wintek is complete software development service headquartered at Bangalore. We are expertise in providing a comprehensive and tailor-made solutions to meet customers delight. The company is registered as an MSME and also registered.</p>
