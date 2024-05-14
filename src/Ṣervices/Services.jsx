@@ -4,13 +4,13 @@ import data from './servdet.js'
 function Services() {
   return (
     <>
-    <div  id='services' className="bg-dark py-5 mt-4 text-light">
+    <div  id='services' className=" py-5 mt-4 ">
         <div className='text-center'>
             <h1 className='m-4 p-3  highlight'>Our Services</h1>
         </div>
         <div className="px-md-5">
 
-        <div  id="myCar" className="carousel bg-dark text-light slide" data-bs-ride="carousel">
+        <div  id="myCar" className="carousel  text-light slide" data-bs-ride="carousel">
         <div className="carousel-inner ">
             
 

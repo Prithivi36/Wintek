@@ -4,9 +4,10 @@ import Wintek from '../assets/WintekLogo.svg'
 function Navbar() {
   return (
     <>
-    <nav className="navbar mx-0 parasite px-4 navbar-expand-lg navbar-light bg-white">
-        <a className="my-0 py-0" href="#">
-            <img src={Wintek} style={{width:'150px' ,height:'50px'}} className='my-0 py-0'  />
+    <nav className="navbar mx-0 parasite px-4 navbar-expand-lg bg-dark navbar-dark ">
+        <a className="my-0 py-0 align-items-center justify-content-center d-flex nav-link" href="#">
+            <img src={Wintek} style={{width:'50px' ,height:'50px'}} className='my-0 mx-3 px-0 py-0'  />
+            <h3 className='d-inline my-0 ms-0'>WINTEK</h3>
         </a>
         <button  className="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
             <span className="navbar-toggler-icon"></span>
